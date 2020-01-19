@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/cl_activity"
+    tools:context=".presenter.view.activity.ListaArticulosActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/abl_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <EditText
+                android:id="@+id/et_busqueda"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/search_input_style"
+                android:drawableStart="@drawable/ic_search_gray_24dp"
+                android:drawableLeft="@drawable/ic_search_gray_24dp"
+                android:drawablePadding="8dp"
+                android:hint="@string/lista_articulo_buscar"
+                android:inputType="textCapWords|textNoSuggestions"
+                android:textColor="@color/content_text_color"
+                android:visibility="visible" />
+
+        </android.support.v7.widget.Toolbar>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_inicio" />
+
+    <include layout="@layout/content_carrito" />
+
+    <include layout="@layout/content_pedidos" />
+
+    <include layout="@layout/content_bottom_navigation_view" />
+
+
+
+</android.support.design.widget.CoordinatorLayout>

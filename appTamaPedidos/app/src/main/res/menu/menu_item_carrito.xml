@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_opciones"
+        android:icon="@drawable/ic_dots_vertical"
+        android:title="@string/menu_item_carrito_opciones"
+        app:showAsAction="always">
+
+        <menu>
+
+            <item
+                android:id="@+id/action_editar"
+                android:icon="@drawable/ic_mode_edit_24dp"
+                android:title="@string/menu_item_carrito_editar"
+                android:visible="true" />
+
+            <item
+                android:id="@+id/action_eliminar"
+                android:icon="@drawable/ic_delete_forever"
+                android:title="@string/menu_item_carrito_eliminar" />
+
+        </menu>
+
+    </item>
+
+</menu>

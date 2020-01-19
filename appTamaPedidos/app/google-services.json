@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "145451275043",
+    "firebase_url": "https://apppedidosvalois.firebaseio.com",
+    "project_id": "apppedidosvalois",
+    "storage_bucket": "apppedidosvalois.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:145451275043:android:507ade57a26e4d3361f296",
+        "android_client_info": {
+          "package_name": "pe.com.apptama.apptamapedidos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "145451275043-4g906iklnjklqlfijga9po45g7o8vls3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "pe.com.apptama.apptamapedidos",
+            "certificate_hash": "6d6d40ab678e83bfc0df874bc0a7ab04d10d18c8"
+          }
+        },
+        {
+          "client_id": "145451275043-3amvpk2uqgma73j9ho5p9udmh44b0uv4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWvEas4DFEkktTpgYbdqJWkBNkXnAyWn0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "145451275043-3amvpk2uqgma73j9ho5p9udmh44b0uv4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

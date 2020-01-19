@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/glh_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/glv_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.10" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/glv_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.90" />
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_nombre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:counterEnabled="true"
+        app:counterMaxLength="30"
+        app:layout_constraintEnd_toEndOf="@+id/glv_2"
+        app:layout_constraintStart_toStartOf="@+id/glv_1"
+        app:layout_constraintTop_toTopOf="@+id/glh_1">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/tie_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:drawableStart="@drawable/ic_account_box_black_24dp"
+            android:drawableLeft="@drawable/ic_account_box_black_24dp"
+            android:drawablePadding="10dp"
+            android:focusable="true"
+            android:hint="@string/ingresarpedidocab_dialog_textinputedidtext_nombre"
+            android:inputType="textCapWords|textNoSuggestions"
+            android:maxLength="30"
+            android:selectAllOnFocus="true" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_telefono"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/glv_2"
+        app:layout_constraintStart_toStartOf="@+id/glv_1"
+        app:layout_constraintTop_toBottomOf="@+id/til_nombre">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/tie_telefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:drawableStart="@drawable/ic_phone_black_24dp"
+            android:drawableLeft="@drawable/ic_phone_black_24dp"
+            android:drawablePadding="10dp"
+            android:focusable="true"
+            android:hint="@string/ingresarpedidocab_dialog_textinputedidtext_telefono"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:selectAllOnFocus="true" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_ruc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:counterEnabled="true"
+        app:counterMaxLength="11"
+        app:errorEnabled="true"
+        app:helperText="@string/ingresarpedidocab_dialog_textinputedidtext_ruc_help"
+        app:helperTextTextAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintEnd_toEndOf="@+id/glv_2"
+        app:layout_constraintStart_toStartOf="@+id/glv_1"
+        app:layout_constraintTop_toBottomOf="@+id/til_telefono">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/tie_ruc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:drawableStart="@drawable/ic_passport_biometric"
+            android:drawableLeft="@drawable/ic_passport_biometric"
+            android:drawablePadding="10dp"
+            android:focusable="true"
+            android:hint="@string/ingresarpedidocab_dialog_textinputedidtext_ruc"
+            android:inputType="number"
+            android:maxLength="11"
+            android:selectAllOnFocus="true" />
+    </android.support.design.widget.TextInputLayout>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,38 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="pe.com.apptama.apptamadirectorio.presentacion.view.activity.MainActivity">
+
+    <item
+        android:visible="false"
+        android:id="@+id/action_busca"
+        android:orderInCategory="100"
+        android:title="@string/action_sincroniza"
+        android:icon="@drawable/ic_search_black_24dp"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_sincroniza"
+        android:orderInCategory="100"
+        android:title="@string/action_sincroniza"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_modo"
+        android:orderInCategory="100"
+        android:title="@string/action_modo"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_micodigo"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_acerca"
+        android:orderInCategory="100"
+        android:title="@string/action_acerca"
+        app:showAsAction="never" />
+
+</menu>
